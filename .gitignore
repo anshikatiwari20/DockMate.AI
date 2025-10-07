@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+*.whl
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Environment variables
+.env
+
+# Docker
+*.log
+*.db
+*.sqlite3
+docker-compose.override.yml
+docker-compose.override.yaml
+
+# IDE / Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build / distribution folders
+build/
+dist/
+*.tar.gz
+*.egg
