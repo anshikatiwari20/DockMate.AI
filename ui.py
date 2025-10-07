@@ -1,8 +1,16 @@
 import streamlit as st
 import requests
+import threading
+import uvicorn
+# Import your FastAPI app
+from app import app  # make sure this imports your app.py FastAPI instance
+# --- Run FastAPI in the background ---
+def run_fastapi():
+    uvicorn.run(app, host="0.0.0.0", port=8000)
 
+threading.Thread(target=run_fastapi, daemon=True).start()
 # Streamlit App Configuration
-st.set_page_config(page_title="LangGraph Agent UI", layout="centered")
+st.set_page_config(page_title="DockMate.AI", layout="centered")
 
 # Define API endpoint
 API_URL = "http://127.0.0.1:8000/chat"
