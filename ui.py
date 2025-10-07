@@ -10,7 +10,7 @@ API_URL = "http://127.0.0.1:8000/chat"
 
 
 # Streamlit UI Elements
-st.title("LangGraph Chatbot Agent")
+st.title("DockMate.AI")
 st.write("Interact with the LangGraph-based agent using this interface.")
 
 # Input box for system prompt
